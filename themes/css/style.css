@@ -1,0 +1,250 @@
+/* start login page */
+
+.login-form {
+    position: relative;
+    top: 100px;
+    background-color: rgba(96, 103, 138, 0.63);
+    ;
+    padding: 50px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.login-btn {
+    height: 50px;
+    border: 1px solid #3a2279;
+    background-color: #3a2279;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sign-up-btn {
+    height: 50px;
+    border: 1px solid #52ce55;
+    background-color: #52ce55;
+    font-weight: bold;
+    color: #fff;
+}
+
+.sign-up-btn:hover {
+    height: 50px;
+    border: 1px solid #52ce55;
+    background-color: #fff;
+    font-weight: bold;
+    color: #52ce55;
+}
+
+.login-btn:hover {
+    height: 50px;
+    border: 1px solid #3a2279;
+    background-color: #fff;
+    font-weight: bold;
+    color: #3a2279;
+}
+
+.login-page {
+    background-image: url(../img/login.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/* end login page */
+
+/* sign-up */
+
+.sign-up-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    direction: rtl;
+    font-size: 15px;
+}
+
+/* end sign up page  */
+
+/* start nav  */
+
+.navbar {
+    background-color: #445373;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li:hover {
+    background-color: #22094c;
+}
+
+/* end nav  */
+
+/* start home page  */
+
+.test {
+    border: 1px solid #111;
+    height: 50px;
+}
+
+.posts {
+    height: 1000px;
+}
+
+.full-post {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.media-comment {
+    border-bottom-left-radius: 15px;
+    background-color: #edf7ff;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.media-heading span {
+    color: #777;
+    font-size: 15px;
+    float: right;
+    margin-right: 15px;
+}
+
+.ads {
+    height: 400px;
+}
+
+.panel-default>.panel-heading {
+    height: 45px;
+    background-color: #445373;
+}
+
+.panel-default>.panel-heading p {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.thumbnail .caption h5 {}
+
+.main-post-div {
+    margin-top: 20px;
+    border: 1px solid #888;
+    padding: 10px;
+}
+
+.user-comment {
+    background-color: #eee;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* end home page */
+
+/* start profile page */
+
+.info li:nth-child(odd) {
+    background-color: #eee;
+}
+
+.info li {
+    padding: 10px;
+}
+
+.info li span {
+    display: inline-block;
+    width: 100px;
+}
+
+.upload-avatar-link p {
+    position: absolute;
+    top: 200px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* end profile page */
+
+/* start buttons page */
+
+.fa-star {
+    font-size: 20px;
+    color: #ff8f00;
+}
+
+.fa-eye {
+    font-size: 20px;
+}
+
+.fa-heart {
+    font-size: 15px;
+    color: #f00;
+}
+
+.fa-circle {
+    color: #4fc151;
+}
+
+.fa-warning {
+    font-size: 20px;
+}
+
+/* end buttons page  */
+
+/* start chat box */
+
+.scroll {
+    height: 70vh;
+    overflow: auto;
+}
+
+.scroll ul {
+    list-style-type: none;
+}
+
+.chats .by-me .content {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 60px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.chats .by-other .content {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 60px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.chat-meta {
+    color: #999;
+}
+
+/* end chat box */
+
+/* my liprarry  */
+
+.margin-bottom-12 {
+    margin-bottom: 12px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+/* end my lirprrary */

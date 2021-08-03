@@ -1,0 +1,104 @@
+ 
+.left-item{ 
+    position: relative; 
+    border-left: 1px solid #ddd; 
+}
+.right-item {
+    position: relative;
+    max-height: 90vh;
+    height: 90vh;
+    overflow: auto;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.main-chat-section { 
+    position: relative; 
+    height: 100vh;  
+}
+
+.users-messages{
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    height: 95px;
+    padding: 5px;
+}
+.users-messages .user-item {
+    padding: 10px 0;
+}
+.main-chat-section .users-messages .user-img{
+    position: relative;
+    padding: 5px;
+    height: 85px;
+}
+.main-chat-section .users-messages .user-img img{
+    border-radius: 1000px;
+    height: 100%;
+    width: 80px;
+}
+.main-chat-box {
+    position: relative;
+}
+.left-item .right-message{
+    height: 10px;
+    width: auto; 
+}
+.right-message .user-img img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.msg-content{
+    width: auto;
+}
+/***/
+.scroll { 
+ height: 60vh;
+ overflow: auto;
+}
+.scroll ul{
+ list-style-type: none;
+}
+.chats .by-me {
+ margin-bottom: 15px;     
+}
+.chats .by-me .avatar img{
+ border-radius: 50px;
+}
+.chats .by-other .avatar img{
+ border-radius: 50px;
+}
+.chats .by-other {
+  margin-bottom: 15px;        
+}
+.chats .by-me .content {
+  
+ padding: 5px 20px;
+ margin-left: 60px;
+ border-radius: 57px;
+ color: #fff;
+ background-color: #007bff;
+
+}
+ 
+.chats .by-other .content{
+  
+padding: 5px 20px;
+margin-right: 60px; 
+border-radius: 57px;
+background-color: #eee;
+ 
+}
+.chats .by-other .clearfix {
+    text-align: right;
+}
+.chats .by-me .content .chat-meta {
+    color: #d2d2d2
+}
+.chat-meta {
+  font-weight: bold;
+  color: #999;
+}
+.chat-form { 
+    bottom: 0;
+    
+}
