@@ -1,8 +1,10 @@
 <div class="panel panel-default" >
     <div class="panel-heading">
+    
             <p>  الأعضاء </p> 
+           
     </div>
-    <div class="panel-body" >
+    <div class="panel-body" > 
         <?php 
             
         
@@ -19,14 +21,14 @@
             $stmt->execute();
             $infos = $stmt->fetchAll();
         ?>
-      <div class="row">
+      <div class="row"> 
           <?php foreach($infos as $info){ ?>
-          <div class="col-sm-6 col-md-4">
+          <div class="col-sm-8 col-md-4">
             <div class="thumbnail">
                 <?php echo '<a href="profile.php?uid='.$info['user_id'].' ">'; ?>
               <img src="themes/img/default-user-image.png" alt="...">
                 <?php echo '</a>'; ?>
-                <div class="caption">
+                <div class="caption" >
                 <h5 class="text-center"><strong><?php echo $info['f_name'] . ' ' .  $info['l_name']; ?></strong></h5>
                 <p class="text-center"><span ><?php echo $info['user_id'] ?></span> | <span ><?php echo $info['age'] ?></span> </p>
                    <div id="<?php echo $info['user_id']; ?>" >

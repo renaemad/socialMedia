@@ -17,7 +17,7 @@
 
             <form action="search-name.php" method="POST" class="navbar-form navbar-left">
                 <div class="form-group">
-                    <input name='phrase' type="text" class="form-control" placeholder=" بحث ">
+                    <input name ='phrase' type="text" class="form-control" placeholder=" بحث ">
                 </div>
                 <button type="submit" class="btn btn-success"><i class="fa fa-search"></i> بحث </button>
             </form>

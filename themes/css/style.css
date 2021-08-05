@@ -120,7 +120,9 @@
 .ads {
     height: 400px;
 }
-
+.panel .panel-default{
+    width : 70% !important;
+}
 .panel-default>.panel-heading {
     height: 45px;
     background-color: #445373;
