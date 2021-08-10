@@ -8,13 +8,11 @@ if ($_SESSION['email']) {
 ?>
 
 <div class="container-fluid">
-    <div class="  ads col-xs-12 col-sm-12 col-md-3 col-lg-3">
-        <?php include $tmbl . 'ads.php'; ?>
-    </div>
+
     <!-- <div class=" col-xs-12 col-sm-12 col-md-9 col-lg-9" >
          include $tmbl . 'search-control.php'; 
     </div> -->
-    <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="col-lg-9">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <p> الأعضاء </p>
@@ -53,7 +51,7 @@ if ($_SESSION['email']) {
 
                             <?php if (!empty($avatars['avatar'])) {
                   ?>
-                            <img src="upload/avatar/<?php echo $avatars['avatar'] ?>" alt="...">
+                            <img src="upload/avatar/<?php echo $avatars['avatar'] ?>" style="height: 300px;" alt="...">
                             <?php  } else { ?>
                             <img src="themes/img/default-user-image.png" alt="...">
                             <?php } ?>

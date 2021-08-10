@@ -24,10 +24,20 @@
       <div class="row"> 
           <?php foreach($infos as $info){ ?>
           <div class="col-sm-8 col-md-4">
-            <div class="thumbnail">
-                <?php echo '<a href="profile.php?uid='.$info['user_id'].' ">'; ?>
-              <img src="themes/img/default-user-image.png" alt="...">
-                <?php echo '</a>'; ?>
+          <div class="thumbnail">
+                            <?php
+                  $id = $info['user_id'];
+                  $stmt1 = $con->prepare("SELECT * FROM avatars WHERE user_id = $id");
+                  $stmt1->execute();
+                  $avatars = $stmt1->fetch();
+                  ?>
+
+                            <?php if (!empty($avatars['avatar'])) {
+                  ?>
+                            <img src="upload/avatar/<?php echo $avatars['avatar'] ?>" style="height: 300px;" alt="...">
+                            <?php  } else { ?>
+                            <img src="themes/img/default-user-image.png" alt="...">
+                            <?php } ?>
                 <div class="caption" >
                 <h5 class="text-center"><strong><?php echo $info['f_name'] . ' ' .  $info['l_name']; ?></strong></h5>
                 <p class="text-center"><span ><?php echo $info['user_id'] ?></span> | <span ><?php echo $info['age'] ?></span> </p>

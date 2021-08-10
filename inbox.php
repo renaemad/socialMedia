@@ -64,11 +64,15 @@ $rows = $stmt->fetchAll();
                                 $stmt = $con->prepare("SELECT * FROM users WHERE user_id = " . $row['sender'] . " ");
                                 $stmt->execute();
                                 $userInfo = $stmt->fetch();
+                                $stmt = $con->prepare("SELECT * FROM avatars WHERE user_id = " . $row['sender'] . "");
+                                $stmt->execute();
+                                $avatar = $stmt->fetch();
                         ?>
                         <!-- start  by me -->
                         <li class="by-me margin-bottom-10">
                             <div class="avatar pull-left">
-                                <img height="50px" width="50px" src="upload/avatar/default-user-image.png">
+                                <!-- <img height="50px" width="50px" src="upload/avatar/default-user-image.png"> -->
+                                <img src="upload/avatar/<?php echo $avatar['avatar'] ?>" height="50px" width="50px" alt="...">
                             </div>
                             <div class="content">
                                 <div class="chat-meta"> <?php echo $userInfo['f_name'] ?> <span class="pull-right">
@@ -81,11 +85,14 @@ $rows = $stmt->fetchAll();
                                 $stmt = $con->prepare("SELECT * FROM users WHERE user_id = " . $row['sender'] . " ");
                                 $stmt->execute();
                                 $userInfo = $stmt->fetch();
+                                $stmt = $con->prepare("SELECT * FROM avatars WHERE user_id = " . $row['sender'] . "");
+                                $stmt->execute();
+                                $avatars = $stmt->fetch();
                             ?>
                         <!-- start  by other -->
                         <li class="by-other margin-bottom-10">
                             <div class="avatar pull-right">
-                                <img height="50px" width="50px" src="upload/avatar/default-user-image.png">
+                            <img src="upload/avatar/<?php echo $avatars['avatar'] ?>" height="50px" width="50px" alt="...">
                             </div>
                             <div class="content">
                                 <div class="chat-meta"> <?php echo $row['time'] ?> <span
